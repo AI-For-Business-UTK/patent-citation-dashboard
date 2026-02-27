@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 def load_data():
     """Load the consolidated companies data"""
-    return pd.read_csv('top_100_cited_companies_consolidated.csv')
+    return pd.read_csv('data/top_100_cited_companies_consolidated.csv')
 
 def get_company_list(df):
     """Get list of companies for the dropdown"""
@@ -264,4 +264,4 @@ def update_dashboard(selected_companies, selected_year, active_tab):
     return summary_text, content
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True, port=8051)

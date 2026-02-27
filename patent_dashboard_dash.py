@@ -264,4 +264,4 @@ def update_dashboard(selected_companies, selected_year, active_tab):
     return summary_text, content
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8051)
+    app.run(debug=True)
